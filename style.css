@@ -1,0 +1,99 @@
+body {
+  background-image: url('background.jpg');
+}
+
+h1 {
+  color: lightcyan;
+  vertical-align: middle;
+  text-align: center;
+}
+
+h2 {
+  color: lightcyan;
+}
+
+#game { 
+  width: 100%;
+  height: 560px;
+}
+
+#game-area {
+  position: absolute;
+  width: auto;
+  margin: auto;
+  top: 60px;
+  left: 20%;
+  border:1px solid #000000;
+}
+
+#board {
+  position: absolute;
+  left: 20%;
+  width: auto;
+  margin: auto;
+  border:1px solid #000000;
+}
+
+#menu-area {
+  position: absolute;
+  left: 20%;  
+  margin: auto;
+}
+
+#countdown {
+
+}
+
+#menu-background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: .8;
+  background-image: url('background.jpg');
+}
+
+#main-menu {
+  position: absolute;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left:0;
+}
+
+.menu{
+	padding: 0;
+  padding-top: 20%;
+	margin: 0;
+
+	text-align: center;
+
+	list-style: none;
+}
+
+.menu button {
+  width: 25%;
+  margin: .5em;
+
+  color: black;
+  background-color: lightcoral;
+
+  border-radius: 1px;
+
+  vertical-align: middle;
+  text-align: center;
+
+	cursor: pointer;
+}
+
+#menu-area .screen.active {
+	display: block;
+}
+
+#menu-area .screen {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: none;
+	z-index: 10;
+}

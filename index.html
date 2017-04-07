@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body onload="Game.game.init();">
+  <div id="game">
+    <canvas id="board" width=800px height=50px></canvas>
+
+    <canvas id="game-area" width=800px height=500px></canvas>
+
+    <div id="menu-area" style="">
+      <div id="menu-background" class="screen"></div>
+      <div id="main-menu" class="screen">
+        <ul class="menu">
+          <li><button id="main-new-game-button" type="button">New Game</button></li>
+          <li><button id="main-high-score-button" type="button">High Score</button></li>
+          <li><button id="main-credits-button" type="button">Credits</button></li>
+        </ul>
+      </div>
+      
+      <div id="high-score-menu" class="screen">
+				<ul class="menu">
+					<h2 id="high-scores"></h2>
+					<li><button id="high-score-back" type="button">Back</button></li>
+				</ul>
+			</div>
+
+      <div id="game-over-menu" class="screen">
+				<ul class="menu">
+					<h2 id="game-over-score"></h2>
+					<li><button id="game-over-back" type="button">Back</button></li>
+				</ul>
+			</div>
+      
+      <div id="countdown" class="screen">
+        <h1 id="count"></h1>
+      </div>
+
+      <div id="credits" class="screen">
+				<ul class="menu">
+					<h2>Brendan Frasier</h2>
+					<h2>Nikki Minaj</h2>
+					<h2>Morgan Freeman</h2>
+					<h2>All The Single Ladies</h2>
+					<h2>Ben Phillips</h2>
+					<li><button id="credits-back-button">Back</button></li>
+				</ul>
+			</div>
+
+    </div>
+    <div><h2 id="current-score"></h2></div>
+  </div>
+
+  <script src="scripts/game.js"></script>
+  <script src="scripts/paddle.js"></script>
+  <script src="scripts/brick.js"></script>
+  <script src="scripts/ball.js"></script>
+  <script src="scripts/lives.js"></script>
+  <script src="scripts/menus/mainmenu.js"></script>
+  <script src="scripts/menus/menu-background.js"></script>
+  <script src="scripts/menus/highscore.js"></script>
+  <script src="scripts/menus/countdown.js"></script>
+  <script src="scripts/menus/credits.js"></script>
+  <script src="scripts/menus/gameover.js"></script>
+  <script src="scripts/particlesystem.js"></script>
+  <script src="scripts/random.js"></script>
+  
+  
+  
+  
+</body>
+</html>
